@@ -27,8 +27,8 @@ const messages = [
 const HeartsList = () => {
     return (
         <div className='hearts-container'>
-            {messages.map(message => (
-                <CandyColoredHeart key={message.id} msg={message} />
+            {messages.map((message, index) => (
+                <CandyColoredHeart key={index} msg={message} />
             ))}
         </div>
     );

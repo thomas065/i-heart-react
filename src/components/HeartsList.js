@@ -1,6 +1,5 @@
 // import Heart from "./Heart";
-import CandyColoredHeart from "./CandyColoredHeart";
-import { Component } from "react";
+import CandyColoredHeart from './CandyColoredHeart';
 
 const messages = [
     'cool cud',
@@ -22,19 +21,17 @@ const messages = [
     'yank o way',
     'mage love',
     'oy',
-    'in a fan'
+    'in a fan',
 ];
 
-class HeartsList extends Component {
-    render() {
-        return (
-            <div className="hearts-container">
-            {messages.map((message) => (
+const HeartsList = () => {
+    return (
+        <div className='hearts-container'>
+            {messages.map(message => (
                 <CandyColoredHeart key={message.id} msg={message} />
             ))}
-            </div>
-        );
-        }
-}
+        </div>
+    );
+};
 
-export default HeartsList
+export default HeartsList;
